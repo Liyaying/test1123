@@ -1,0 +1,25 @@
+print('hello world')
+
+git init
+
+git status
+
+git add .
+
+git commit -m "v1"
+git commit -m "v2"
+
+git restore --staged test2.py
+
+git add test2.py
+#只想把其中一個檔案儲存(紅變綠)
+
+git reset --hard 4f192
+#坐時光機回到v1版本
+git reset --hard f462c
+#坐時光機回到v3版本
+git reset --hard
+#重新回到上一次儲存點 #可用但危險
+
+git reflog
+#開上帝視角看版本編號
